@@ -1,0 +1,115 @@
+h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    font-family: var(--main-font);
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.text_photo {
+    display: flex;
+    gap: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    
+}
+
+.about_photo {
+    margin-left: 5%;
+    width: 30%;
+}
+
+.help {
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.photo_shadow {
+    position: absolute;
+    width: 116%;
+    height: 80%;
+    left: -8%;
+    top: 10%;
+    background-color: rgba(200, 200, 200, 0.3);
+    z-index: 0;
+}
+
+.about_text {
+    width: 45%;
+    font-family: var(--main-font);
+    font-size: 16px;
+    margin-left: 5%;
+}
+
+.about_text h3:first-child {
+    margin-top: 0;
+}
+
+.about_text p {
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 20px;
+}
+
+
+
+.dots span {
+    color: rgb(180, 180, 180);
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.dots span:hover {
+    color: var(--element-color);
+}
+
+@media (max-width: 700px) {
+    .text_photo {
+        flex-direction: column;
+    }
+
+    .about_photo,
+    .about_text {
+        width: 90%;
+    }
+
+    .about_text {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .section2 h2 {
+        margin-top: 40px;
+        font-size: 22px;
+    }
+
+    .section2 .subtitle {
+        font-size: 18px;
+    }
+}
+
+

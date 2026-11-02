@@ -1,0 +1,39 @@
+.sponsors {
+    width: 100%;
+    padding: 8% 0;
+}
+
+.sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp1 {
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+.sp2 {
+    gap: 3%;
+}
+
+.sponsor img {
+    width: 10%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .sponsors {
+        margin-top: 50px;
+    }
+
+    .sponsor {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .sponsors img {
+        width: 25%;
+    }
+}

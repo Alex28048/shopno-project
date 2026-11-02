@@ -1,0 +1,128 @@
+.rew_radio,
+.rew_photos img,
+.review_text,
+.pair {
+    display: none;
+}
+
+.rew_radio:nth-child(1):checked ~ .review_main .rew_photos img:nth-child(1),
+.rew_radio:nth-child(1):checked ~ .review_main .review_text:nth-child(1),
+.rew_radio:nth-child(1):checked ~ .review_main .pair:nth-child(1) {
+    display: block;
+}
+.rew_radio:nth-child(2):checked ~ .review_main .rew_photos img:nth-child(2),
+.rew_radio:nth-child(2):checked ~ .review_main .review_text:nth-child(2),
+.rew_radio:nth-child(2):checked ~ .review_main .pair:nth-child(2) {
+    display: block;
+}
+.rew_radio:nth-child(3):checked ~ .review_main .rew_photos img:nth-child(3),
+.rew_radio:nth-child(3):checked ~ .review_main .review_text:nth-child(3),
+.rew_radio:nth-child(3):checked ~ .review_main .pair:nth-child(3) {
+    display: block;
+}
+.rew_radio:nth-child(4):checked ~ .review_main .rew_photos img:nth-child(4),
+.rew_radio:nth-child(4):checked ~ .review_main .review_text:nth-child(4),
+.rew_radio:nth-child(4):checked ~ .review_main .pair:nth-child(4) {
+    display: block;
+}
+
+.review_main {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    gap: 10%;
+}
+
+.review_left {
+    width: 30%;
+}
+
+.review_right {
+    width: 60%;
+    margin-top: 4%;
+}
+
+.rew_photos {
+    position: relative;
+}
+
+.rew_photos img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.review_text {
+    font-size: 14px;
+    background-color: rgb(239, 241, 243);
+    text-align: center;
+    padding: 11% 10%;
+    font-family: var(--main-font);
+    line-height: 1.7;
+}
+
+.arrows {
+    margin-top: 5%;
+    text-align: right;
+}
+
+.pair label {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgb(220, 220, 220);
+    transition: 1s;
+}
+
+.pair label:hover {
+    background-color: var(--element-color);
+}
+
+.stars {
+    color: gold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.review_dots {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.review_dots label {
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.review_dots label:hover {
+    color: var(--element-color);
+}
+
+@media (max-width: 700px) {
+    .review_main {
+        flex-direction: column;
+    }
+
+    .review_left,
+    .review_right {
+        width: 100%;
+    }
+
+    .arrows {
+        text-align: center;
+    }
+
+    .section4 h2 {
+    font-size: 22px;
+    margin-top: 70px;
+    }
+
+    .section4 .subtitle {
+    font-size: 14px;
+    }
+
+
+}
